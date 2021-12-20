@@ -1,7 +1,5 @@
-- 👋 Hi, I’m @yoo86
-- 👀 I’m interested in programming.
-- 🌱 I’m currently learning Java, Python.
-- 📫 How to reach me -> frog7134@gmail.com
+TIL 홈
+https://github.com/yoo86/TIL/blob/main/README.md
 
 <!---
 yoo86/yoo86 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
