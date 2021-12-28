@@ -1,5 +1,5 @@
-#### TIL 홈  
-https://github.com/yoo86/TIL/blob/main/README.md
+#### WIL 홈  
+
 
 <!---
 yoo86/yoo86 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
