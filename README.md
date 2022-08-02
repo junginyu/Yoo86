@@ -1,6 +1,6 @@
-#### WIL 홈  
+#### NOTION 포트폴리오
 
-https://comfortable-harmonica-667.notion.site/WIL-9a3d01af9f694cce9b050f29907e5546
+https://www.notion.so/Junior-iOS-Developer-40c0eb8e67384b57b1d5036aa8206ede
 <!---
 yoo86/yoo86 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
