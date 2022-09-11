@@ -1,11 +1,3 @@
-#### NOTION 포트폴리오
-
-https://www.notion.so/Junior-iOS-Developer-40c0eb8e67384b57b1d5036aa8206ede
-<!---
-yoo86/yoo86 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
-
 ![header](https://capsule-render.vercel.app/api?type=waving&&color=gradient&height=100&section=header&fontSize=90)
 
 # Jungin Yoo 
@@ -14,8 +6,11 @@ You can click the Preview link to take a look at your changes.
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=yoo86&show_icons=true&theme=cobalt&hide=stars)
 
+## My RESUME
+https://www.notion.so/Junior-iOS-Developer-40c0eb8e67384b57b1d5036aa8206ede
+
 ![footer](https://capsule-render.vercel.app/api?type=waving&&color=gradient&height=100&section=footer&fontSize=90)
 <!---
-terry-koo/terry-koo is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+yoo86/yoo86 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
