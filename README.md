@@ -4,8 +4,7 @@
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=yoo86&show_icons=true&theme=cobalt&hide=stars)
 
-## My RESUME
-https://www.notion.so/Junior-iOS-Developer-40c0eb8e67384b57b1d5036aa8206ede
+[My RESUME](https://www.notion.so/Junior-iOS-Developer-40c0eb8e67384b57b1d5036aa8206ede)
 
 <!---
 yoo86/yoo86 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
