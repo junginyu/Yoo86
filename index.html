@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다마고치 🐣</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="device">
+        <div class="device-label">🐣 TAMAGOTCHI</div>
+        <div class="screen-container">
+            <div class="screen" id="screen">
+                <div class="status-bar">
+                    <span class="age-display" id="age-display">🥚 아기</span>
+                    <span class="time-display" id="time-display">00:00</span>
+                </div>
+                <div class="pet-area">
+                    <div class="pet-container">
+                        <div class="pet" id="pet">🐣</div>
+                        <div class="pet-mood" id="pet-mood">😊</div>
+                    </div>
+                    <div class="scene-decoration">
+                        <span>🌱 🌸 🌱</span>
+                    </div>
+                </div>
+                <div class="stats-area">
+                    <div class="stat">
+                        <span class="stat-label">🍎 배고픔</span>
+                        <div class="stat-bar">
+                            <div class="stat-fill hunger-fill" id="hunger-bar" style="width:100%"></div>
+                        </div>
+                        <span class="stat-value" id="hunger-val">100</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">😊 행복</span>
+                        <div class="stat-bar">
+                            <div class="stat-fill happiness-fill" id="happiness-bar" style="width:100%"></div>
+                        </div>
+                        <span class="stat-value" id="happiness-val">100</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">❤️ 건강</span>
+                        <div class="stat-bar">
+                            <div class="stat-fill health-fill" id="health-bar" style="width:100%"></div>
+                        </div>
+                        <span class="stat-value" id="health-val">100</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">⚡ 에너지</span>
+                        <div class="stat-bar">
+                            <div class="stat-fill energy-fill" id="energy-bar" style="width:100%"></div>
+                        </div>
+                        <span class="stat-value" id="energy-val">100</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="action-btn" id="btn-feed" onclick="feed()">
+                <span class="btn-icon">🍎</span>
+                <span class="btn-label">먹이기</span>
+            </button>
+            <button class="action-btn" id="btn-play" onclick="play()">
+                <span class="btn-icon">🎮</span>
+                <span class="btn-label">놀기</span>
+            </button>
+            <button class="action-btn" id="btn-sleep" onclick="toggleSleep()">
+                <span class="btn-icon">💤</span>
+                <span class="btn-label">수면</span>
+            </button>
+            <button class="action-btn" id="btn-heal" onclick="heal()">
+                <span class="btn-icon">💊</span>
+                <span class="btn-label">치료</span>
+            </button>
+        </div>
+    </div>
+    <div class="message-popup" id="message-popup"></div>
+    <script src="app.js"></script>
+</body>
+</html>
