@@ -3,79 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>다마고치 🐣</title>
+    <title>TAMAGOTCHI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="device">
-        <div class="device-label">🐣 TAMAGOTCHI</div>
-        <div class="screen-container">
+        <div class="chain-hole"></div>
+
+        <div class="screen-frame">
             <div class="screen" id="screen">
-                <div class="status-bar">
-                    <span class="age-display" id="age-display">🥚 아기</span>
-                    <span class="time-display" id="time-display">00:00</span>
+                <div class="hud-top">
+                    <span class="px" id="age-display">EGG</span>
+                    <span class="px" id="time-display">00:00</span>
                 </div>
-                <div class="pet-area">
-                    <div class="pet-container">
-                        <div class="pet" id="pet">🐣</div>
-                        <div class="pet-mood" id="pet-mood">😊</div>
-                    </div>
-                    <div class="scene-decoration">
-                        <span>🌱 🌸 🌱</span>
-                    </div>
-                </div>
-                <div class="stats-area">
-                    <div class="stat">
-                        <span class="stat-label">🍎 배고픔</span>
-                        <div class="stat-bar">
-                            <div class="stat-fill hunger-fill" id="hunger-bar" style="width:100%"></div>
-                        </div>
-                        <span class="stat-value" id="hunger-val">100</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-label">😊 행복</span>
-                        <div class="stat-bar">
-                            <div class="stat-fill happiness-fill" id="happiness-bar" style="width:100%"></div>
-                        </div>
-                        <span class="stat-value" id="happiness-val">100</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-label">❤️ 건강</span>
-                        <div class="stat-bar">
-                            <div class="stat-fill health-fill" id="health-bar" style="width:100%"></div>
-                        </div>
-                        <span class="stat-value" id="health-val">100</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-label">⚡ 에너지</span>
-                        <div class="stat-bar">
-                            <div class="stat-fill energy-fill" id="energy-bar" style="width:100%"></div>
-                        </div>
-                        <span class="stat-value" id="energy-val">100</span>
-                    </div>
+                <canvas id="pet-canvas" width="128" height="72"></canvas>
+                <div class="stat-grid">
+                    <div class="srow"><span class="px sname">FOOD</span><div class="bbar" id="bar-hunger"></div></div>
+                    <div class="srow"><span class="px sname">HAPPY</span><div class="bbar" id="bar-happiness"></div></div>
+                    <div class="srow"><span class="px sname">HLTH</span><div class="bbar" id="bar-health"></div></div>
+                    <div class="srow"><span class="px sname">ENRG</span><div class="bbar" id="bar-energy"></div></div>
                 </div>
             </div>
         </div>
-        <div class="buttons">
-            <button class="action-btn" id="btn-feed" onclick="feed()">
-                <span class="btn-icon">🍎</span>
-                <span class="btn-label">먹이기</span>
-            </button>
-            <button class="action-btn" id="btn-play" onclick="play()">
-                <span class="btn-icon">🎮</span>
-                <span class="btn-label">놀기</span>
-            </button>
-            <button class="action-btn" id="btn-sleep" onclick="toggleSleep()">
-                <span class="btn-icon">💤</span>
-                <span class="btn-label">수면</span>
-            </button>
-            <button class="action-btn" id="btn-heal" onclick="heal()">
-                <span class="btn-icon">💊</span>
-                <span class="btn-label">치료</span>
-            </button>
+
+        <div class="side-dot left-dot"></div>
+        <div class="side-dot right-dot"></div>
+
+        <div class="controls">
+            <div class="btn-col">
+                <span class="px btn-tag">A</span>
+                <button class="bigbtn btn-a" onclick="feed()">🍎</button>
+                <span class="px btn-sub">FEED</span>
+            </div>
+
+            <div class="mid-col">
+                <div class="px brand-text">TAMA</div>
+                <div class="speaker">
+                    <div class="sdot"></div><div class="sdot"></div>
+                    <div class="sdot"></div><div class="sdot"></div>
+                    <div class="sdot"></div><div class="sdot"></div>
+                </div>
+                <div class="small-btns">
+                    <button class="smalbtn" onclick="toggleSleep()"><span class="px">ZZZ</span></button>
+                    <button class="smalbtn" onclick="heal()"><span class="px">MED</span></button>
+                </div>
+            </div>
+
+            <div class="btn-col">
+                <span class="px btn-tag">B</span>
+                <button class="bigbtn btn-b" onclick="play()">🎮</button>
+                <span class="px btn-sub">PLAY</span>
+            </div>
         </div>
     </div>
-    <div class="message-popup" id="message-popup"></div>
+
+    <div class="toast" id="toast"></div>
     <script src="app.js"></script>
 </body>
 </html>
