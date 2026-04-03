@@ -604,7 +604,7 @@ function renderCanvas() {
     ctx.fillStyle = GB0;
     ctx.fillRect(0, 0, W, H);
 
-    // Ground dots at y=68, every 4px
+    // Ground dots at y=68, every 4px (alternate positions: 0, 8, 16 ...)
     ctx.fillStyle = GB3;
     for (let x = 0; x < W; x += 8) {
         ctx.fillRect(x, 68, 2, 2);
@@ -616,7 +616,7 @@ function renderCanvas() {
     // Sprite scale and center
     const SCALE    = 4;
     const SPR_SIZE = 12 * SCALE; // 48
-    const sx       = Math.floor((W - SPR_SIZE) / 2);           // 40
+    const sx       = Math.floor((W - SPR_SIZE) / 2);          // 40
     const sy       = Math.floor((H - SPR_SIZE) / 2 + bobY);   // ~12
 
     // Extra bounce during action animation
@@ -626,9 +626,9 @@ function renderCanvas() {
     }
 
     // Pick sprite
-    const stage   = pet.stage in PIXEL_SPRITES ? pet.stage : 'baby';
-    const mood    = pet.mood  in PIXEL_SPRITES[stage] ? pet.mood : 'happy';
-    const sprite  = PIXEL_SPRITES[stage][mood];
+    const stage  = pet.stage in PIXEL_SPRITES ? pet.stage : 'baby';
+    const mood   = pet.mood  in PIXEL_SPRITES[stage] ? pet.mood : 'happy';
+    const sprite = PIXEL_SPRITES[stage][mood];
 
     // Draw main sprite
     ctx.fillStyle = GB3;
